@@ -1,3 +1,3 @@
 # Kakao Clone 2020 Update
 
-Css got so much better!
+HTML & Css got so much fun!
