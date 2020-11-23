@@ -9,10 +9,84 @@
   justify-content: center;
   align-items: center;
   font-size: 32px;
+  animation: color 3s linear;
 }
 
 @media screen and (max-width: 645px) {
   #no-mobile {
     display: none;
+  }
+}
+
+#no-mobile div {
+  animation: rotation 3s linear;
+}
+
+@keyframes color {
+  0% {
+    background-color: var(--yellow);
+  }
+
+  25% {
+    background-color: #3caea3;
+  }
+
+  50% {
+    background-color: #20639b;
+  }
+  75% {
+    background-color: #3caea3;
+  }
+  100% {
+    background-color: var(--yellow);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    color: none;
+    overflow: hidden;
+    width: 100%;
+  }
+  20% {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+  }
+
+  40% {
+    position: absolute;
+    left: 36%;
+    top: 50%;
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+  }
+
+  60% {
+    position: absolute;
+    left: 64%;
+    top: 50%;
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+  }
+  80% {
+    position: absolute;
+    left: 92%;
+    top: 50%;
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+  }
+  100% {
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    color: rgba(0, 0, 0, 1);
+    overflow: hidden;
+    width: 100%;
   }
 }
